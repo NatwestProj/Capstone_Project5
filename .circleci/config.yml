@@ -63,7 +63,7 @@ jobs:
             pip install -U awscli
       - kubernetes/install
       - aws-eks/update-kubeconfig-with-authenticator:
-          cluster-name: udacity-p5-3
+          cluster-name: udacity-project5-2
       - kubernetes/create-or-update-resource:
           resource-file-path: k8s/deployment.yml
           resource-name: deployment/capstone-sample-app
