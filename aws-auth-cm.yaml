@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: aws-auth
+  namespace: kube-system
+data:
+  mapRoles: |
+    - rolearn: arn:aws:eks:us-east-1:151294383165:nodegroup/UdacityCapStone/group01/2cbf537f-c6e0-22a7-efc0-3d2b0304d6d4    
+      username: system:node:ip-192-168-237-122.ec2.internal
+      groups:
+        - system:bootstrappers
+        - system:nodes
+        
+  mapUsers: |
+    - userarn: arn:aws:iam::151294383165:role/eks-master
+      username: capstone
+      groups:
+        - system:masters
