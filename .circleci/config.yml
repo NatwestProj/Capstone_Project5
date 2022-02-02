@@ -32,6 +32,7 @@ jobs:
           name: build-image
           command: |
             sudo chmod +x ./gradlew
+            ./gradlew androidDependencies
             ./run_docker.sh
       - persist_to_workspace:
           root: .
