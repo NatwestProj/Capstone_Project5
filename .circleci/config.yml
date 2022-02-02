@@ -31,8 +31,7 @@ jobs:
       - run:
           name: build-image
           command: |
-            sudo chmod +x ./gradlew
-            ./gradlew androidDependencies
+            sudo chmod +x run_docker.sh
             ./run_docker.sh
       - persist_to_workspace:
           root: .
@@ -51,6 +50,7 @@ jobs:
       - run:
           name: push-image
           command: |
+            sudo chmod +x upload_docker.sh
             ./upload_docker.sh
             
   K8S-Deploy:
