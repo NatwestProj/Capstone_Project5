@@ -63,7 +63,7 @@ jobs:
             pip install -U awscli
       - kubernetes/install
       - aws-eks/update-kubeconfig-with-authenticator:
-          cluster-name: Capstone
+          cluster-name: Capstoneproject
       - kubernetes/create-or-update-resource:
           resource-file-path: k8s/deployment.yml
           resource-name: deployment/capstone-sample-app
@@ -92,7 +92,7 @@ workflows:
       - K8S-Deploy:
           requires: [push-image] 
       - aws-eks/update-container-image:
-          cluster-name: Capstone
+          cluster-name: Capstoneproject
           container-image-updates: "capstone-sample-app=daoudm/mock-api:${CIRCLE_SHA1}"
           resource-name: deployment/capstone-sample-app
           record: true
