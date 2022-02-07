@@ -20,7 +20,7 @@ spec:
         app: capstone-sample-app
     spec:
       containers:
-        - image: $DOCKER_USERNAME/mock-api:$CIRCLE_SHA1
+        - image: $DOCKER_USERNAME/mock-api:${CIRCLE_SHA1}
           name: capstone-sample-app
           ports:
             - containerPort: 5000
