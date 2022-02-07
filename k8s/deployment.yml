@@ -20,7 +20,7 @@ spec:
         app: capstone-sample-app
     spec:
       containers:
-        - image: sunnynatwest/mock-api:4cda6f890d279fafa9d571a9a68f18e99e50923c
+        - image: sunnynatwest/mock-api:923d544a3b63c84e8a29edc8d2eac6d113a2aec9
           name: capstone-sample-app
           ports:
             - containerPort: 5000
