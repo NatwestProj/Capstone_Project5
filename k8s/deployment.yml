@@ -20,7 +20,7 @@ spec:
         app: capstone-sample-app
     spec:
       containers:
-        - image: daoudm/mock-api:7ed28d503a28acb7722e7517a9ed28ac0536519d
+        - image: sunnynatwest/mock-api:latest
           name: capstone-sample-app
           ports:
             - containerPort: 5000
