@@ -8,7 +8,7 @@ orbs:
 executors:
   docker-publisher:
     environment:
-      IMAGE_NAME: sudhanshukatiyar/building-on-ci
+      IMAGE_NAME: sunnynatwest/building-on-ci
     docker:
       - image: circleci/buildpack-deps:stretch
       
@@ -80,7 +80,7 @@ jobs:
       - run:
           name: verify-deploy
           command: |
-             curl a4ad9f157f2284cb89ad592a8a54669d-381491820.eu-west-3.elb.amazonaws.com | grep -q ${CIRCLE_SHA1}
+             curl a4ad9f157f2284cb89ad592a8a54669d-381491820.eu-west-2.elb.amazonaws.com | grep -q ${CIRCLE_SHA1}
      
 workflows:
   default:
