@@ -17,5 +17,6 @@ Requirements
  3. Docker_Image - Image was pushed to docker registry
  4. EC2 , CF & EKS were created sucessfully
  5. EKS is created using eksctl cloudformation script.
+ 6. Review comment screenshot is included on Capstone_Project5/Screenshot/ReviewScreenshot
 
 
