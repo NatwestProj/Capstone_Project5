@@ -16,5 +16,6 @@ Requirements
  2. Lint_error & Lint_success - This shows usage of lint
  3. Docker_Image - Image was pushed to docker registry
  4. EC2 , CF & EKS were created sucessfully
+ 5. EKS is created using eksctl cloudformation script.
 
 
